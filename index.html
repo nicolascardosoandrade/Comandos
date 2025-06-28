@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Comandos Git e GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Guia de Comandos Git e GitHub</h1>
+    </header>
+    <nav>
+        <a href="#git-commands">Comandos Git</a>
+        <a href="#github-commands">GitHub</a>
+    </nav>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Pesquisar comandos..." onkeyup="searchCommands()">
+    </div>
+    <div class="container">
+        <div class="section" id="git-commands">
+            <h2>Comandos do Git</h2>
+            <div class="command">
+                <h3><code>git init</code></h3>
+                <p>Inicializa um novo repositório Git no diretório atual.</p>
+            </div>
+            <div class="command">
+                <h3><code>git clone [url]</code></h3>
+                <p>Clona um repositório remoto para o seu computador.</p>
+            </div>
+            <div class="command">
+                <h3><code>git add [arquivo]</code></h3>
+                <p>Adiciona arquivos ao índice (staging area) para serem commitados.</p>
+            </div>
+            <div class="command">
+                <h3><code>git commit -m "mensagem"</code></h3>
+                <p>Salva as alterações no repositório local com uma mensagem descritiva.</p>
+            </div>
+            <div class="command">
+                <h3><code>git push origin [branch]</code></h3>
+                <p>Envia as alterações locais para o repositório remoto na branch especificada.</p>
+            </div>
+            <div class="command">
+                <h3><code>git pull</code></h3>
+                <p>Atualiza o repositório local com as alterações do repositório remoto.</p>
+            </div>
+            <div class="command">
+                <h3><code>git branch</code></h3>
+                <p>Lista todas as branches do repositório. Use <code>git branch [nome]</code> para criar uma nova branch.</p>
+            </div>
+            <div class="command">
+                <h3><code>git checkout [branch]</code></h3>
+                <p>Muda para a branch especificada. Use <code>git checkout -b [nome]</code> para criar e mudar para uma nova branch.</p>
+            </div>
+            <div class="command">
+                <h3><code>git merge [branch]</code></h3>
+                <p>Combina a branch especificada com a branch atual.</p>
+            </div>
+            <div class="command">
+                <h3><code>git status</code></h3>
+                <p>Mostra o estado atual do repositório, incluindo arquivos modificados e no staging.</p>
+            </div>
+        </div>
+        <div class="section" id="github-commands">
+            <h2>GitHub e Integração</h2>
+            <div class="command">
+                <h3><code>git remote add origin [url]</code></h3>
+                <p>Conecta o repositório local a um repositório remoto no GitHub.</p>
+            </div>
+            <div class="command">
+                <h3><code>git push -u origin [branch]</code></h3>
+                <p>Envia a branch local para o GitHub e configura o rastreamento.</p>
+            </div>
+            <div class="command">
+                <h3>GitHub Pages</h3>
+                <p>Para hospedar um site, crie um repositório chamado <code>username.github.io</code>, adicione um <code>index.html</code> e configure o GitHub Pages em <code>Settings > Pages</code>.</p>
+            </div>
+            <div class="command">
+                <h3>Pull Requests</h3>
+                <p>No GitHub, crie um Pull Request (PR) para propor alterações de uma branch para outra. Acesse a aba "Pull Requests" no repositório e clique em "New pull request".</p>
+            </div>
+            <div class="command">
+                <h3>Fork e Clone</h3>
+                <p>Fork um repositório no GitHub para criar uma cópia no seu perfil. Use <code>git clone</code> para baixá-lo e contribuir.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Guia de Git e GitHub. Criado para aprendizado.</p>
+    </footer>
+    
+   <script src="script.js"></script>
+
+</body>
+</html>
